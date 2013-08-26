@@ -17,8 +17,12 @@ Or install it yourself as:
     $ gem install br_inscricao_estadual
 
 ## Usage
+	insc_est = BrInscricaoEstadual::Base.new(inscricao_estadual,uf) # uf values 'AC','RS'....
+	insc_est.valid? # if valid return true else false
 
-TODO: Write usage instructions here
+	Exemplo: 
+	insc_est = BrInscricaoEstadual::Base.new('01.004.823/001-12','AC')
+	insc_est.valid? 
 
 ## Contributing
 
