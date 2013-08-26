@@ -1,4 +1,4 @@
-module InscricaoEstadual
+module BrInscricaoEstadual
   class AC
     attr_accessor :insc_est
 
