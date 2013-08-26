@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "br_inscricao_estadual"
   spec.version       = BrInscricaoEstadual::VERSION
   spec.authors       = ["Yuri Poloni"]
-  spec.email         = ["yuripoloni@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["yuripoloni@gmail.com","yuri.poloni@pull4up.com.br"]
+  spec.description   = %q{A Ruby validate state registration on Brazil. Validação de Inscrição Estadual}
+  spec.summary       = %q{A Ruby validate state registration on Brazil with http://www.sintegra.gov.br/insc_est.html}
+  spec.homepage      = "https://github.com/Pull4up/br_inscricao_estadual"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
