@@ -19,14 +19,11 @@ describe BrInscricaoEstadual::AP do
 	end
 
 	it "should valid Amapa states incription" do
-		insc_est = BrInscricaoEstadual::AP.new('039999990')
+		insc_est = BrInscricaoEstadual::AP.new('039999998')
 		insc_est.should be_valid
 	end
-	
-	it "should valid Amapa states incription" do
-		insc_est = BrInscricaoEstadual::AP.new('031842770')
-		insc_est.should be_valid
-	end
+
+	pending "criar teste para quando o resto da divisao - 11 = 11"
 
 
 	it "should not valid Amapa states incription" do
