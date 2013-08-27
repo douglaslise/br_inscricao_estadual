@@ -1,16 +1,9 @@
 module BrInscricaoEstadual
   class GO < Common
-    def valid?
-      size_verify && state_code && digit_verify
-    end
-
     protected
-      PESO = [9, 8, 7, 6, 5, 4, 3, 2]
       STATE_CODE = ["10", "11", "15"]
-      STATE_INSC_SIZE = 9
       DIGITS_ZERO = [0]
       
-
       def digit_verify_inscription(result)
         insc_int_arr = self.insc_est.split('').collect(&:to_i)
         if insc_int_arr.take(PESO.size).join().to_i == 11094402 then

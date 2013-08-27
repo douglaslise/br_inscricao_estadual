@@ -1,9 +1,17 @@
 module BrInscricaoEstadual
 	class Common
+    DIGITS_ZERO = [0,1,10,11] 
+    STATE_INSC_SIZE = 9
+    PESO = [9, 8, 7, 6, 5, 4, 3, 2]
+    
 		attr_accessor :insc_est
 
 		def initialize(insc_est)
       self.insc_est = insc_est.gsub(/\D*/,'')
+    end
+
+    def valid?
+      self.class.const_defined?('STATE_CODE') ? (size_verify && state_code && digit_verify) : (size_verify && digit_verify)
     end
 
 		def calculate_verify(peso)

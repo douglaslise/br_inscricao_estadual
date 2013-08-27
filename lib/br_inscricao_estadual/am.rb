@@ -1,13 +1,7 @@
 module BrInscricaoEstadual
 	class AM < Common
-    def valid?
-      size_verify && digit_verify
-    end
-
     protected
       PESO = [9, 9, 9, 9, 9, 9, 9, 9]
-      STATE_CODE = ""
-      STATE_INSC_SIZE = 9
       DIGITS_ZERO = [10]
 
       def calculate_verify(peso)

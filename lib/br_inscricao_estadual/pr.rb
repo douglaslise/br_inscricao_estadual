@@ -1,9 +1,5 @@
 module BrInscricaoEstadual
 	class PR < Common
-    def valid?
-      size_verify && digit_verify
-    end
-
     protected
       PESO = [3, 2, 7, 6, 5, 4, 3, 2]
       PESO2 = [4, 3, 2, 7, 6, 5, 4, 3, 2]
