@@ -22,7 +22,8 @@ module BrInscricaoEstadual
     end
 
     def state_code
-      self.insc_est[0..1] == self.class::STATE_CODE
+      return self.insc_est[0..1] == self.class::STATE_CODE if self.class::STATE_CODE.is_a?(String)
+      return self.class::STATE_CODE.include?(self.insc_est[0..1]) if self.class::STATE_CODE.is_a?(Array)
     end
 
     def digit_verify

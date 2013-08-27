@@ -6,6 +6,10 @@ require "br_inscricao_estadual/al"
 require "br_inscricao_estadual/ap"
 require "br_inscricao_estadual/am"
 require "br_inscricao_estadual/ce"
+require "br_inscricao_estadual/df"
+require "br_inscricao_estadual/es"
+require "br_inscricao_estadual/go"
 
 module BrInscricaoEstadual
 end
+
