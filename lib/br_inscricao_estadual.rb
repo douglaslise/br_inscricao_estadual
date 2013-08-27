@@ -9,6 +9,7 @@ require "br_inscricao_estadual/ce"
 require "br_inscricao_estadual/df"
 require "br_inscricao_estadual/es"
 require "br_inscricao_estadual/go"
+require "br_inscricao_estadual/ma"
 
 module BrInscricaoEstadual
 end
