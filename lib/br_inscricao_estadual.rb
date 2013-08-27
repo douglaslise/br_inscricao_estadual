@@ -12,6 +12,8 @@ require "br_inscricao_estadual/go"
 require "br_inscricao_estadual/ma"
 require "br_inscricao_estadual/mt"
 require "br_inscricao_estadual/ms"
+require "br_inscricao_estadual/pa"
+require "br_inscricao_estadual/pb"
 
 module BrInscricaoEstadual
 end
