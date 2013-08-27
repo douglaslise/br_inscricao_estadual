@@ -21,6 +21,7 @@ require "br_inscricao_estadual/rj"
 require "br_inscricao_estadual/rs"
 require "br_inscricao_estadual/rr"
 require "br_inscricao_estadual/sc"
+require "br_inscricao_estadual/sp"
 require "br_inscricao_estadual/se"
 require "br_inscricao_estadual/to"
 
