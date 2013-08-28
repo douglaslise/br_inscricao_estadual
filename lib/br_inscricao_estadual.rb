@@ -22,6 +22,9 @@ require "br_inscricao_estadual/pe"
 require "br_inscricao_estadual/pi"
 require "br_inscricao_estadual/rj"
 require "br_inscricao_estadual/rs"
+require "br_inscricao_estadual/rn"
+require "br_inscricao_estadual/rn_9"
+require "br_inscricao_estadual/rn_10"
 require "br_inscricao_estadual/ro"
 require "br_inscricao_estadual/rr"
 require "br_inscricao_estadual/sc"
@@ -31,5 +34,6 @@ require "br_inscricao_estadual/to"
 
 module BrInscricaoEstadual
 end
+
 
 
