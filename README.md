@@ -1,4 +1,5 @@
 # BrInscricaoEstadual
+[![Code Climate](https://codeclimate.com/repos/521e0704f3ea00689f04ef93/badges/1457e87b327bdd3dac02/gpa.png)](https://codeclimate.com/repos/521e0704f3ea00689f04ef93/feed)
 
 Validação de inscrição estadual para ruby
 
