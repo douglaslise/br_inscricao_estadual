@@ -6,9 +6,9 @@ module BrInscricaoEstadual
       PESO = [1, 2, 3, 4, 5, 6, 7, 8]
 
       def calculate_verify(peso)
-    	result = calculate(peso)%9
-		digit_verify_inscription(result)      
-       end
+        result = calculate(peso)%9
+		    digit_verify_inscription(result)      
+      end
 
 	end
 end

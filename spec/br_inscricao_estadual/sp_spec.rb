@@ -12,4 +12,14 @@ describe BrInscricaoEstadual::SP do
 		insc_est = BrInscricaoEstadual::SP.new('110.043.490.114')
 		insc_est.should_not be_valid
 	end
+
+	it "should valid São Paulo states incription produtor rural" do
+		insc_est = BrInscricaoEstadual::SP.new('P-01100424.3/002')
+		insc_est.should be_valid
+	end
+
+	it "should not valid São Paulo states incription produtor rural" do
+		insc_est = BrInscricaoEstadual::SP.new('P-01100454.3/002')
+		insc_est.should_not be_valid
+	end
 end
