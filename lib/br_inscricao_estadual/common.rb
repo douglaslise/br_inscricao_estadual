@@ -36,11 +36,13 @@ module BrInscricaoEstadual
 
     def digit_verify
       digito1 = calculate_verify(self.class::PESO)
-      return false unless self.insc_est[(self.class::DIGITO_LEVEL1||=self.class::PESO.size)].to_i == digito1 #[0,1].include?(digito1) &&
+      self.class::const_set('DIGITO_LEVEL1', self.class::PESO.size) unless self.class.const_defined?('DIGITO_LEVEL1')
+      return false unless self.insc_est[(self.class::DIGITO_LEVEL1)].to_i == digito1 #[0,1].include?(digito1) &&
 
       if self.class.const_defined?('PESO2')
         digito2 = calculate_verify(self.class::PESO2)
-        return false unless self.insc_est[(self.class::DIGITO_LEVEL2||=self.class::PESO2.size)].to_i == digito2 #[0,2].include?(digito2) && 
+        self.class::const_set('DIGITO_LEVEL2', self.class::PESO2.size) unless self.class.const_defined?('DIGITO_LEVEL2')
+        return false unless self.insc_est[(self.class::DIGITO_LEVEL2)].to_i == digito2 #[0,2].include?(digito2) &&
       end
 
       true
