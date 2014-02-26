@@ -9,12 +9,6 @@ module BrInscricaoEstadual
       result
     end
 
-    def calculate_verify(method, numero, peso)
-      soma = send method, numero, peso
-      result = (soma.to_f / 10.0).ceil * 10 - soma
-      digit_verify_inscription(result)
-    end
-
     def calculate_digito1(numero)
       # Acrescenta um zero a partir do 4o digito caso inscr conter apenas 6 digitos
       mun, inscr, estab = numero.match(/^(\d{3})(\d{6,7})(\d{2})\d{2}$/).captures
