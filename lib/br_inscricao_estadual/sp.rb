@@ -15,7 +15,7 @@ module BrInscricaoEstadual
 			PESO = [1, 3, 4, 5, 6, 7, 8, 10]
 			PESO2= [3, 2, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 			STATE_INSC_SIZE = 12
-			DIGITS_ZERO = [0,1,10,11]
+			DIGITS_ZERO = [0,10,11]
 
 
 			def calculate_verify(peso)
