@@ -71,6 +71,7 @@ describe BrInscricaoEstadual::MG do
 		BrInscricaoEstadual::MG.new('694.204.519/0045').should be_valid
 		BrInscricaoEstadual::MG.new('001.098.458/0026').should be_valid
 		BrInscricaoEstadual::MG.new('002.062.902/0000').should be_valid
+		BrInscricaoEstadual::MG.new('020.118.535/0345').should be_valid
 	end
 
 	it "should not valid MINAS GERAIS states incription" do

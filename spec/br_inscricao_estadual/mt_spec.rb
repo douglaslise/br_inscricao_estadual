@@ -8,6 +8,11 @@ describe BrInscricaoEstadual::MT do
 		insc_est.should be_valid
 	end
 
+	it "should valid Mato Grosso states incription" do
+		insc_est = BrInscricaoEstadual::MT.new('00131742280')
+		insc_est.should be_valid
+	end
+
 	it "should valid Mato Grosso states incription 2" do
 		insc_est = BrInscricaoEstadual::MT.new('131661388')
 		insc_est.should be_valid
