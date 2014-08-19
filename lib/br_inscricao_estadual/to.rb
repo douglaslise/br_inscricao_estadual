@@ -4,6 +4,19 @@ module BrInscricaoEstadual
      super && type
     end
 
+    def initialize(insc_est)
+      insc_est.gsub!(/\D/, "")
+      if insc_est.size == 9
+        #Quando informados apenas 9 dígitos então entende-se que o tipo (opcional - 3o e 4o dígitos)
+        # não foi informado e emulamos o cálculo utilizando um "tipo" válido
+        first, last = insc_est.match(/(\d{2})(\d{7})/).captures
+        super("#{first}01#{last}")
+      else
+        super(insc_est)
+      end
+    end
+
+
 		protected
 			PESO = [9, 8, 0, 0, 7, 6, 5, 4, 3, 2]
 			STATE_INSC_SIZE = 11
