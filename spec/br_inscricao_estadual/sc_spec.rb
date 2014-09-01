@@ -8,6 +8,11 @@ describe BrInscricaoEstadual::SC do
 		insc_est.should be_valid
 	end
 
+	it "should valid Santa Catarina states incription" do
+		insc_est = BrInscricaoEstadual::SC.new('255.573.391')
+		insc_est.should be_valid
+	end
+
 	it "should not valid Santa Catarina states incription" do
 		insc_est = BrInscricaoEstadual::SC.new('251.040.853')
 		insc_est.should_not be_valid
