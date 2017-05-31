@@ -1,7 +1,7 @@
 # BrInscricaoEstadual
 [![Code Climate](https://codeclimate.com/github/douglaslise/br_inscricao_estadual/badges/gpa.svg)](https://codeclimate.com/github/douglaslise/br_inscricao_estadual)
-[![Build Status](https://travis-ci.org/Pull4up/br_inscricao_estadual.png)](http://travis-ci.org/Pull4up/br_inscricao_estadual)
-[![Coverage Status](https://coveralls.io/repos/Pull4up/br_inscricao_estadual/badge.png)](https://coveralls.io/r/Pull4up/br_inscricao_estadual)
+[![Build Status](https://travis-ci.org/douglaslise/br_inscricao_estadual.png)](http://travis-ci.org/douglaslise/br_inscricao_estadual)
+[![Coverage Status](https://coveralls.io/repos/douglaslise/br_inscricao_estadual/badge.png)](https://coveralls.io/r/douglaslise/br_inscricao_estadual)
 
 Validação de inscrição estadual para ruby
 
